@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0d1117 url("img/pexels-quill-j-154796843-33425453.jpg") no-repeat center/cover;
+    color: white;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+    /* màu trắng mờ, alpha thấp */
+    border-radius: 16px;
+
+    /* làm mờ nền phía sau container */
+    backdrop-filter: blur(5px);
+    /* bạn có thể chỉnh 5px → càng lớn càng mờ */
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: white;
+    /* chữ vẫn đọc rõ */
+}
+
+.left,
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+.name {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.sub {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.tags {
+    margin: 15px 0;
+}
+
+.tag {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.blue {
+    background: #3b82f6;
+}
+
+.cyan {
+    background: #06b6d4;
+}
+
+.green {
+    background: #16a54b;
+}
+
+.desc {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.right {
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+/* ... giữ nguyên phần trên ... */
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    display: block;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+}
+
+/* Khi hover đổi nền màu riêng */
+.fb:hover {
+    background: #1877F2;
+}
+
+.ig:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.gh:hover {
+    background: #6b7280;
+}
+
+.yt:hover {
+    background: #ff0000;
+}
+
+.tk:hover {
+    background: #111;
+}
+
+/* Hiệu ứng cột trái và phải */
+.left,
+.right {
+    transition: transform 0.3s ease;
+    /* mượt khi dịch xuống */
+}
+
+.left:hover {
+    transform: translateY(5px);
+    /* dịch xuống 5px */
+}
+
+.right:hover {
+    transform: translateY(5px);
+}
+
+.btn.gmail {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn.gmail:hover {
+    background-color: #d93025;
+    /* hover nền đỏ */
+    color: #ffffff;
+    /* chữ trắng khi hover */
+}
+
+.btn.phone {
+    display: inline-block;
+    padding: 8px 16px;
+    /* nền trắng */
+
+    /* màu chữ xanh lá */
+    /* viền xanh lá */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn.phone:hover {
+    background-color: #28a745;
+    /* nền xanh lá khi hover */
+    color: #ffffff;
+    /* chữ trắng khi hover */
+}
